@@ -1,0 +1,44 @@
+@font-face {
+    font-family: common-text-font;
+    src: url('../../fonts/HTOWERT.TTF');
+}
+
+
+@font-face {
+  font-family: title-font;
+  src: url('../../fonts/PERTILI.TTF');
+}
+
+.main-title{
+  font-family: title-font;
+  font-size: 8vh;
+  font-weight: lighter;
+  letter-spacing: 0.8rem;
+}
+
+.main-title-medium{
+  @extend .main-title;
+  font-size: 6vh;
+}
+
+.title-medium{
+  font-family: common-text-font;
+  font-size: 300%;
+  font-weight: lighter;
+}
+
+.subtitle{
+  // font-family:common-text-font;
+  font-style: italic; 
+  font-size: 1.7rem;
+  color: $color-black-lighter; 
+  letter-spacing: 0.2rem;
+}
+
+.common-paragraph{
+  font-size: 1.7rem;
+}
+
+.color-white{
+  color: $color-white-main;
+}

@@ -1,0 +1,54 @@
+.home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  &__left-content {
+    position: relative;
+    height: 150vh;
+    // width: 50vw;
+    top: -50vh;
+    right: 3%;
+    & img {
+      height: 100%; 
+    }
+  }
+  &__right-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle{
+    position: relative;
+    top: 10%;
+    right: 28%;
+    align-self: flex-end;
+  }
+
+  &__phrase{
+    position: relative;
+    top: 32%;
+    align-self: center;
+  }
+
+  &__arrow{
+    position: relative;
+    align-self: center;
+    top: 32%;
+  }
+}
+
+.header-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+    top: 10%;
+    right: 20%;
+    
+    & :last-child{
+        margin-top: 8%;
+        margin-left: 20%;
+    }
+}
+

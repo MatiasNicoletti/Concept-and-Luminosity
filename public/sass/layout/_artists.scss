@@ -1,0 +1,60 @@
+.artists {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artists-content {
+//   background-color: blueviolet;
+  width: 95%;
+  height: 125vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  grid-column-gap: 4rem;
+  margin-right: 2%;
+}
+
+.artist-card {
+    position: relative;
+  width: 100%;
+  height: 100%;
+  
+  &__portrait {
+    width: 100%;
+    height: 80%;
+    // background-color: red;
+    &-img {
+      position: relative;
+      height: 100%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+    &-name{
+        position: relative;
+        z-index: 5;
+        top: 10%;      
+    }
+
+    &:last-of-type{
+        color: $color-white-main;
+    }
+  }
+
+  &__text-work{
+      position: relative;
+    //   height: 20%;
+      width: 100%;
+      margin-top: 10%;
+    //   background-color: rgb(226, 55, 43);
+    
+  }
+}
+
+#artist-btn{
+    top: 5rem;
+}
