@@ -1,12 +1,10 @@
 .product-grid {
   width: 100%;
   min-height: 100vh;
-  background-color: $color-grey-light;
 
   &-container {
     width: 90%;
     height: 100%;
-    background-color: rgb(166, 166, 207);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
@@ -16,19 +14,22 @@
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: flex-end;
   text-align: center;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.59);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.59);
+  box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.59);
   &-info {
     position: relative;
     width: 100%;
-    height: 23%;
+    height: 18%;
     //   background-color: transparent;
     //
     vertical-align: middle;
@@ -36,9 +37,9 @@
     flex-direction: column;
     justify-content: center;
     z-index: 5;
-    
-    & *{
-        margin: 0.5rem 0;
+
+    & * {
+      margin: 0.5rem 0;
     }
 
     &::before {
@@ -46,17 +47,30 @@
       content: "";
       width: 100%;
       height: 100%;
-      background-color: transparent;
-      backdrop-filter: blur(2px);
-      filter: brightness(130%);
+      background-color: rgba(255, 255, 255, 0.51);
+      backdrop-filter: blur(3px);
       z-index: -1;
     }
   }
 
-  & a{
-      position: relative;
-      top: 3%;
-      z-index: 10;
-      
+  & a {
+    position: relative;
+    top: 3%;
+    z-index: 10;
+    width: 6vw;
+    height: 8%;
+    font-size: 1.8vw;
+    line-height: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-name {
+    font-size: 2.1vw;
+  }
+
+  &-artist {
+    font-size: 1.8vw;
   }
 }
