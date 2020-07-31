@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server",
-    "debug": "ndb server.js"
+    "debug": "ndb server.js",
+    "sass": "node-sass ./public/sass/style.scss ./public/sass/style.css -w"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,11 @@
     "express": "4.17.1",
     "mongoose": "^5.9.26",
     "nbc": "0.0.10",
-    "nodemon": "^2.0.4"
+    "node-sass": "^4.14.1",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^2.0.4",
+    "parallelshell": "^3.0.2",
+    "path": "^0.12.7",
+    "pug": "^3.0.0"
   }
 }

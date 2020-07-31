@@ -6,4 +6,6 @@ router.route('/artists')
     .get(artistController.getAll)
     .post(artistController.create);
 
+router.route('/artists/:id').get(artistController.getOne);
+
 module.exports = router;
