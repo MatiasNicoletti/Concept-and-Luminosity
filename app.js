@@ -9,7 +9,7 @@ var sassMiddleware = require('node-sass-middleware');
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'public/views'));
-
+  
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '100kb' }));
 app.use(express.static(path.join(__dirname, 'public')));
