@@ -1,6 +1,7 @@
 const express = require('express');
 const artistRoute = require('./routes/artistRoute');
 const productRoute = require('./routes/productRoute');
+const viewRoute = require('./routes/viewRoute');
 const devRoute = require('./routes/devRoute');
 const app = express();
 const path = require('path');
@@ -21,6 +22,8 @@ app.use(sassMiddleware({
     outputStyle: 'compressed',
     prefix: '/stylesheets' 
   }));
+  
+app.use('/home', viewRoute);
 app.use('/api', artistRoute); 
 app.use('/api', productRoute);
 app.use('/api', devRoute);

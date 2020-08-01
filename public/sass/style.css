@@ -59,7 +59,8 @@ html {
 }
 
 .app-container {
-  background-color: #EFEFEF;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .navbar {
@@ -113,10 +114,11 @@ html {
           align-items: center;
 }
 
-.navbar__list li {
+.navbar__list li a {
   font-size: 2rem;
   color: #FFFFFF;
   font-family: common-text-font;
+  text-decoration: none;
 }
 
 .home {
@@ -270,7 +272,7 @@ html {
 
 .artists-content {
   width: 95%;
-  height: 135vh;
+  height: 155vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -324,6 +326,7 @@ html {
 }
 
 footer {
+  position: relative;
   width: 100%;
   height: 25vh;
   text-align: center;
@@ -340,7 +343,7 @@ footer {
           align-items: stretch;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 15rem;
+  top: 100%;
 }
 
 .footer-list {
@@ -483,5 +486,13 @@ footer {
 .grid-buy-btn {
   background-color: #131313;
   color: #FFFFFF;
+}
+
+.light-theme {
+  background-color: #EFEFEF;
+}
+
+.dark-theme {
+  background-color: #131313;
 }
 /*# sourceMappingURL=style.css.map */
