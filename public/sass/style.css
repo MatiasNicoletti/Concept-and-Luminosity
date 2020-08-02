@@ -1,3 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.app-container {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+:root {
+  --text-black-color: #131313;
+  --text-white-color: #eeeeee;
+  --text-default-color-inuse: var(--text-black-color);
+  --nav-color-grey: #4E4E4E;
+  --nav-color-white: #E6E6E6;
+  --nav-links-color-inuse: var(--text-white-color);
+}
+
 @font-face {
   font-family: common-text-font;
   src: url("../../fonts/HTOWERT.TTF");
@@ -43,26 +72,6 @@
   color: #FFFFFF;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.app-container {
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
-
 .navbar {
   background-color: #4E4E4E;
   position: fixed;
@@ -87,7 +96,7 @@ html {
   position: relative;
   height: 130%;
   width: 5%;
-  background-color: #EFEFEF;
+  background-color: var(--nav-color-grey);
 }
 
 .navbar__theme-icon img {
@@ -116,7 +125,7 @@ html {
 
 .navbar__list li a {
   font-size: 2rem;
-  color: #FFFFFF;
+  color: var(--nav-links-color-inuse);
   font-family: common-text-font;
   text-decoration: none;
 }
@@ -138,6 +147,7 @@ html {
 }
 
 .home__left-content img {
+  position: absolute;
   height: 100%;
 }
 
@@ -157,6 +167,7 @@ html {
   right: 28%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  color: var(--text-default-color-inuse);
 }
 
 .home__phrase {
@@ -165,6 +176,7 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  color: var(--text-default-color-inuse);
 }
 
 .home__arrow {
@@ -192,6 +204,10 @@ html {
 .header-title :last-child {
   margin-top: 8%;
   margin-left: 20%;
+}
+
+.header-title h1 {
+  color: var(--text-default-color-inuse);
 }
 
 .about {
@@ -244,6 +260,10 @@ html {
 .about__action {
   position: relative;
   margin-top: 15%;
+}
+
+.about__subtitle {
+  color: var(--text-default-color-inuse);
 }
 
 .about__subtitle:first-of-type {
@@ -463,9 +483,10 @@ footer {
 }
 
 .btn, .btn-medium, .btn-large, .grid-buy-btn {
-  color: #131313;
+  color: var(--text-default-color-inuse);
   text-decoration: none;
-  border: 2px solid #000000;
+  border: 2px solid;
+  border-color: var(--text-default-color-inuse);
   text-transform: uppercase;
 }
 
@@ -484,12 +505,12 @@ footer {
 }
 
 .grid-buy-btn {
-  background-color: #131313;
-  color: #FFFFFF;
+  background-color: var(--text-default-color-inuse);
+  color: var(--text-default-color-inuse);
 }
 
 .light-theme {
-  background-color: #EFEFEF;
+  background-color: #eeeeee;
 }
 
 .dark-theme {

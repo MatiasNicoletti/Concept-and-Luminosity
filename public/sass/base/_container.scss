@@ -17,3 +17,13 @@ html {
 .app-container{
     transition: all .2s ease-in;
 }
+
+:root{
+  --text-black-color: #131313;
+  --text-white-color: #eeeeee;
+  --text-default-color-inuse : var(--text-black-color);
+
+  --nav-color-grey: #4E4E4E;
+  --nav-color-white: #E6E6E6;
+  --nav-links-color-inuse: var(--text-white-color);
+}

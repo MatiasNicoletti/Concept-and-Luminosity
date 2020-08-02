@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  
   &__left-content {
     position: relative;
     height: 150vh;
@@ -10,6 +11,7 @@
     top: -50vh;
     right: 3%;
     & img {
+      position: absolute;
       height: 100%; 
     }
   }
@@ -23,12 +25,14 @@
     top: 10%;
     right: 28%;
     align-self: flex-end;
+    color: var(--text-default-color-inuse);
   }
 
   &__phrase{
     position: relative;
     top: 32%;
     align-self: center;
+    color: var(--text-default-color-inuse);
   }
 
   &__arrow{
@@ -50,5 +54,11 @@
         margin-top: 8%;
         margin-left: 20%;
     }
+
+    & h1{
+      color: var(--text-default-color-inuse);
+    }
 }
+
+
 

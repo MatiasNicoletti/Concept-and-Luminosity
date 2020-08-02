@@ -15,7 +15,7 @@
     position: relative;
     height: 130%;
     width: 5%;
-    background-color: $color-bg-grey;
+    background-color: var(--nav-color-grey);
     
     & img{
         height: 40%;
@@ -41,7 +41,7 @@
     & li{
       & a{
         font-size: 2rem;
-        color: $color-white-main;
+        color: var(--nav-links-color-inuse);
         font-family: common-text-font;
         text-decoration: none;
       }
@@ -49,3 +49,5 @@
     }
   }
 }
+
+.navbar-list-item{}

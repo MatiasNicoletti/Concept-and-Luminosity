@@ -1,7 +1,8 @@
 .btn{
-    color: $color-black-lighter;
+    color: var(--text-default-color-inuse); 
     text-decoration:none;
-    border: 2px solid #000000;
+    border: 2px solid;
+    border-color:  var(--text-default-color-inuse); //all together not working
     text-transform: uppercase;
     
 }
@@ -24,8 +25,8 @@
 
 .grid-buy-btn{
     @extend .btn;
-    background-color: $color-black-lighter;
-    color: $color-white-main;
+    background-color: var(--text-default-color-inuse);
+    color: var(--text-default-color-inuse); 
     
 }
 
