@@ -1,0 +1,22 @@
+include _head
+include _nav
+
+div.product-container
+    img.left-image(src=`/./img/${product.image}`)
+    div.product-right-content
+        h2.title-medium.product-right-content-name=product.name
+        h3.title-medium.product-right-content-artist=`By ${product.artist.name}`
+        p.common-paragraph.product-right-content-description=product.description
+        div.product-right-content-measures
+            div.product-right-content-measures-measure
+                img.product-right-content-measure-icon(src='/./img/svg/arrow-double-directions.svg')
+                span.product-right-content-amount=`${product.measures[0]}cm`
+            div.product-right-content-measures-measure
+                img.product-right-content-measure-icon(src='/./img/svg/arrow-double-directions.svg')
+                span.product-right-content-amount=`${product.measures[1]}cm`
+            div.product-right-content-measures-measure
+                img.product-right-content-measure-icon(src='/./img/svg/arrow-double-directions.svg')
+                span.product-right-content-amount=`${product.measures[2]}cm`
+        div.product-right-content-action
+            p.product-right-content-action-price=`$${product.price}`
+            button.btn-large.btn-action buy

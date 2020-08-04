@@ -4,7 +4,7 @@
     border: 2px solid;
     border-color:  var(--text-default-color-inuse); //all together not working
     text-transform: uppercase;
-    
+    background-color: transparent;
 }
 
 .btn-medium{
@@ -15,7 +15,7 @@
 
 .btn-large{
     @extend .btn;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1.8rem 9rem;
 }
 
@@ -26,7 +26,9 @@
 .grid-buy-btn{
     @extend .btn;
     background-color: var(--text-default-color-inuse);
-    color: var(--text-default-color-inuse); 
+    color: var(--nav-links-color-inuse);
     
 }
+
+
 

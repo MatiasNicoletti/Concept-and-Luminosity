@@ -2,39 +2,41 @@ include _head
 include _nav
 section.product-grid
     div.product-grid-container
-        div.product(style='background-image: url(/./img/product-1.jpg)')
-            a.grid-buy-btn(href='#') $8750
-            div.product-info
-                h4.product-name.title-medium A super artist piece
-                h5.product-artist.title-medium A super artists
 
-        div.product(style='background-image: url(/./img/product-1.jpg)')
-            a.grid-buy-btn(href='#') $8750
-            div.product-info
-                h4.product-name.title-medium A super artist piece
-                h5.product-artist.title-medium A super artists
+        each product in products
+            div.product(style=`background-image: url(/./img/${product.image})`)
+                a.grid-buy-btn.product-price(href='#')=`$${product.price}`
+                div.product-info
+                    h4.product-name.title-medium=product.name
+                    h5.product-artist.title-medium=product.artist.name
+                a.grid-view-btn(href=`gallery/${product._id}`)
+//- div.product(style='background-image: url(/./img/product-1.jpg)')
+//-     a.grid-buy-btn(href='#') $8750
+//-     div.product-info
+//-         h4.product-name.title-medium A super artist piece
+//-         h5.product-artist.title-medium A super artists
 
-        div.product(style='background-image: url(/./img/product-1.jpg)')
-            a.grid-buy-btn(href='#') $8750
-            div.product-info
-                h4.product-name.title-medium A super artist piece
-                h5.product-artist.title-medium A super artists     
+//- div.product(style='background-image: url(/./img/product-1.jpg)')
+//-     a.grid-buy-btn(href='#') $8750
+//-     div.product-info
+//-         h4.product-name.title-medium A super artist piece
+//-         h5.product-artist.title-medium A super artists     
 
-        div.product(style='background-image: url(/./img/product-1.jpg)')
-            a.grid-buy-btn(href='#') $8750
-            div.product-info
-                h4.product-name.title-medium A super artist piece
-                h5.product-artist.title-medium A super artists
+//- div.product(style='background-image: url(/./img/product-1.jpg)')
+//-     a.grid-buy-btn(href='#') $8750
+//-     div.product-info
+//-         h4.product-name.title-medium A super artist piece
+//-         h5.product-artist.title-medium A super artists
 
-        div.product(style='background-image: url(/./img/product-1.jpg)')
-            a.grid-buy-btn(href='#') $8750
-            div.product-info
-                h4.product-name.title-medium A super artist piece
-                h5.product-artist.title-medium A super artists
+//- div.product(style='background-image: url(/./img/product-1.jpg)')
+//-     a.grid-buy-btn(href='#') $8750
+//-     div.product-info
+//-         h4.product-name.title-medium A super artist piece
+//-         h5.product-artist.title-medium A super artists
 
-        div.product(style='background-image: url(/./img/product-1.jpg)')
-            a.grid-buy-btn(href='#') $8750
-            div.product-info
-                h4.product-name.title-medium A super artist piece
-                h5.product-artist.title-medium A super artists
+//- div.product(style='background-image: url(/./img/product-1.jpg)')
+//-     a.grid-buy-btn(href='#') $8750
+//-     div.product-info
+//-         h4.product-name.title-medium A super artist piece
+//-         h5.product-artist.title-medium A super artists
 include _footer
