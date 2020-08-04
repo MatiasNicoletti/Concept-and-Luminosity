@@ -93,10 +93,11 @@ html {
 }
 
 .navbar__theme-icon {
-  position: relative;
-  height: 130%;
-  width: 5%;
-  background-color: var(--nav-color-grey);
+  position: absolute;
+  height: 100%;
+  width: 6%;
+  z-index: 50;
+  background-color: #eeeeee;
 }
 
 .navbar__theme-icon img {
