@@ -1,6 +1,7 @@
 include _head
 include _nav
-section.product-grid
+
+section.product-grid#gallery
     div.product-grid-container
 
         each product in products
@@ -9,34 +10,6 @@ section.product-grid
                 div.product-info
                     h4.product-name.title-medium=product.name
                     h5.product-artist.title-medium=product.artist.name
-                a.grid-view-btn(href=`gallery/${product._id}`)
-//- div.product(style='background-image: url(/./img/product-1.jpg)')
-//-     a.grid-buy-btn(href='#') $8750
-//-     div.product-info
-//-         h4.product-name.title-medium A super artist piece
-//-         h5.product-artist.title-medium A super artists
-
-//- div.product(style='background-image: url(/./img/product-1.jpg)')
-//-     a.grid-buy-btn(href='#') $8750
-//-     div.product-info
-//-         h4.product-name.title-medium A super artist piece
-//-         h5.product-artist.title-medium A super artists     
-
-//- div.product(style='background-image: url(/./img/product-1.jpg)')
-//-     a.grid-buy-btn(href='#') $8750
-//-     div.product-info
-//-         h4.product-name.title-medium A super artist piece
-//-         h5.product-artist.title-medium A super artists
-
-//- div.product(style='background-image: url(/./img/product-1.jpg)')
-//-     a.grid-buy-btn(href='#') $8750
-//-     div.product-info
-//-         h4.product-name.title-medium A super artist piece
-//-         h5.product-artist.title-medium A super artists
-
-//- div.product(style='background-image: url(/./img/product-1.jpg)')
-//-     a.grid-buy-btn(href='#') $8750
-//-     div.product-info
-//-         h4.product-name.title-medium A super artist piece
-//-         h5.product-artist.title-medium A super artists
+                a.grid-view-btn(href=`gallery/${product._id}`) 
+script(src="/./js/index.js")
 include _footer

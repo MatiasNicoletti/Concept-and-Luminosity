@@ -1,0 +1,13 @@
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-item{
+    font-size: 2rem;
+        color: var(--nav-links-color-inuse);
+        font-family: common-text-font;
+        text-decoration: none;
+}

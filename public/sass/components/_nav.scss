@@ -35,22 +35,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    // margin-left: 2rem;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    // background-color: red;
-    & li{
-      & a{
-        font-size: 2rem;
-        color: var(--nav-links-color-inuse);
-        font-family: common-text-font;
-        text-decoration: none;
-      }
-      
-    }
+    margin-left: 3rem;
   }
 }
-
-.navbar-list-item{}

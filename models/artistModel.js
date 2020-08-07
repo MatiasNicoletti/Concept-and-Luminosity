@@ -19,9 +19,6 @@ const artistSchema = new mongoose.Schema({
 
 });
 
-artistSchema.post('save', () => {
-    console.log(Product);
-});
 
 const Artist = mongoose.model('Artists', artistSchema);
 

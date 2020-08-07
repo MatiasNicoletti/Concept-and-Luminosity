@@ -1,7 +1,7 @@
 include _head
 include _nav
 
-div.product-container
+div.product-container#product
     img.left-image(src=`/./img/${product.image}`)
     div.product-right-content
         h2.title-medium.product-right-content-name=product.name
@@ -20,3 +20,4 @@ div.product-container
         div.product-right-content-action
             p.product-right-content-action-price=`$${product.price}`
             button.btn-large.btn-action buy
+script(src="/./js/index.js")    

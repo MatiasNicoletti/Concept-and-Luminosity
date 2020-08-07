@@ -38,7 +38,11 @@
   &__arrow{
     position: relative;
     align-self: center;
-    top: 32%;
+    // height: 10%;
+    width: 3rem;
+    top: 35%;
+    animation: MoveUpDown 1s linear infinite;
+    animation-delay: 2s;
   }
 }
 
@@ -61,4 +65,11 @@
 }
 
 
-
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 35%;
+  }
+  50% {
+    top: 36%;
+  }
+}

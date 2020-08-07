@@ -6,6 +6,8 @@ const devRoute = require('./routes/devRoute');
 const app = express();
 const path = require('path');
 const sass = require('node-sass');
+const compression = require('compression');
+
 var sassMiddleware = require('node-sass-middleware');
 
 app.set('view engine', 'pug');
@@ -18,11 +20,13 @@ app.use(sassMiddleware({
     src: path.join(__dirname, 'public/stylesheets/sass'),
     dest: path.join(__dirname, 'public/stylesheets'),
     debug: true,
-    indentedSyntax: true,
+    indentedSyntax: true, 
     outputStyle: 'compressed',
     prefix: '/stylesheets' 
   }));
   
+app.use(compression());
+
 app.use('/home', viewRoute);
 app.use('/api', artistRoute); 
 app.use('/api', productRoute);

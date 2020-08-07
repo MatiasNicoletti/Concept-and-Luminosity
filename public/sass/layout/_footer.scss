@@ -8,17 +8,24 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: center;
+    
+    // background-color: var(--text-white-color);
     // margin-top: 15rem;
     top: 100%;
+    & *{
+        margin: 1rem;
+    }
 }
 
 .footer-list{
     // background-color: blanchedalmond;
     height: 4vh;
+    display: flex;
     & li{
-        font-size: 2rem;
-        color: $color-black-lighter;
+        & a{
+            color: var(--text-default-color-inuse);
+        }
     }
     
 }

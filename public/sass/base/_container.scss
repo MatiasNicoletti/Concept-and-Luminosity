@@ -14,16 +14,21 @@ html {
   box-sizing: border-box;
 }
 
+body{
+  background-color: #eeeeee;
+}
+
 .app-container{
-    transition: all .2s ease-in;
+    transition: all .35s ease-in;
+    background-color: #eeeeee;
 }
 
 :root{
   --text-black-color: #131313;
-  --text-white-color: #eeeeee;
+  --text-white-color: #dfdfdf;
   --text-default-color-inuse : var(--text-black-color);
 
-  --nav-color-grey: #4E4E4E;
+  --nav-color-grey: #2c2c2c;
   --nav-color-white: #E6E6E6;
   --nav-links-color-inuse: var(--text-white-color);
 }
