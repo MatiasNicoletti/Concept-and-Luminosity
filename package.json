@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server",
+    "start": "node server",
     "debug": "ndb server.js",
     "sass": "node-sass ./public/sass/style.scss ./public/sass/style.css -w"
   },
